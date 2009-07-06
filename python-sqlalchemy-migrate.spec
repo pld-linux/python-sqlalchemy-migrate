@@ -3,10 +3,9 @@ Summary:	Schema migration tools for SQLAlchemy
 Summary(pl.UTF-8):	Narzędzia do migracji struktury bazy dla SQLAlchemy
 Name:		python-sqlalchemy-%{module}
 Version:	0.5.4
-Release:	0.1
+Release:	2
 License:	MIT
 Group:		Development/Languages/Python
-# http://sqlalchemy-migrate.googlecode.com/files/sqlalchemy-migrate-0.5.4.tar.gz
 Source0:	http://sqlalchemy-migrate.googlecode.com/files/sqlalchemy-%{module}-%{version}.tar.gz
 # Source0-md5:	7ad9e6d6dd6df701fc596bcb87380271
 URL:		http://code.google.com/p/sqlalchemy-migrate/
@@ -15,12 +14,15 @@ BuildRequires:	rpm-pythonprov
 # if py_postclean is used
 BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	python-SQLAlchemy >= 0.5.1
+Requires:	python-decorator >= 3.0.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Schema migration tools for SQLAlchemy, designed to support an agile approach to database design, and make it easier to keep development and production databases in sync, as schema changes are required.
 
 %description -l pl.UTF-8
+Narzędzia migracji struktury bazy danych dla SQLAlchemy, zaprojektowane aby wspierać sprawne projektowanie i ułatwiać utrzymanie wersji rozwojowych i produkcyjnych baz danych w synchornizacji w miare zmian ich struktury.
 
 %prep
 %setup -q -n sqlalchemy-%{module}-%{version}
