@@ -10,6 +10,7 @@ Source0:	http://sqlalchemy-migrate.googlecode.com/files/sqlalchemy-%{module}-%{v
 # Source0-md5:	7ad9e6d6dd6df701fc596bcb87380271
 URL:		http://code.google.com/p/sqlalchemy-migrate/
 BuildRequires:	python-devel
+BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 # if py_postclean is used
 BuildRequires:	rpmbuild(macros) >= 1.219
