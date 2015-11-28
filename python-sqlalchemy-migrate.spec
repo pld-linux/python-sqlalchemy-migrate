@@ -3,7 +3,7 @@ Summary:	Schema migration tools for SQLAlchemy
 Summary(pl.UTF-8):	Narzędzia do migracji struktury bazy dla SQLAlchemy
 Name:		python-sqlalchemy-%{module}
 Version:	0.5.4
-Release:	3
+Release:	4
 License:	MIT
 Group:		Development/Languages/Python
 Source0:	http://sqlalchemy-migrate.googlecode.com/files/sqlalchemy-%{module}-%{version}.tar.gz
