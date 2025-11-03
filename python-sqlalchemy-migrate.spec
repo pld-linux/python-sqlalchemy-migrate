@@ -34,13 +34,13 @@ BuildRequires:	python3-modules >= 1:3.3
 BuildRequires:	python3-pbr >= 1.8
 BuildRequires:	python3-setuptools
 %if %{with tests}
-BuildRequires:	python3-Tempita >= 0.4
 BuildRequires:	python3-decorator
 BuildRequires:	python3-ibm_db_sa
 BuildRequires:	python3-scripttest
 BuildRequires:	python3-six >= 1.7.0
 BuildRequires:	python3-sqlalchemy >= 0.9.6
 BuildRequires:	python3-sqlparse
+BuildRequires:	python3-tempita >= 0.4
 %endif
 %endif
 BuildRequires:	rpm-pythonprov
